@@ -18,14 +18,15 @@ type House struct {
 }
 
 func (h House) Print() {
-	fmt.Print("Комнаты: ", h.Rooms, "\nПлощадь: ", h.Square, "\nВысота потолков: ", h.CeilingHeight, "\n")
+	fmt.Print("Дом:\n")
+	fmt.Print("Комнаты: ", h.Rooms, ", Площадь: ", h.Square, ", Высота потолков: ", h.CeilingHeight, "\n\n")
 	fmt.Print("Соседи:\n")
 	h.Family.Print()
-	fmt.Print("Техника:\n")
+	fmt.Print("\nТехника:\n")
 	for _, tmpDevices := range h.Devices {
 		tmpDevices.Print()
 	}
-	fmt.Print("Мебель:\n")
+	fmt.Print("\nМебель:\n")
 	for _, tmpFurniture := range h.Furniture {
 		tmpFurniture.Print()
 	}

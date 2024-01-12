@@ -14,7 +14,7 @@ type Furniture struct {
 }
 
 func (f Furniture) Print() {
-	fmt.Print("Тип мебели: ", f.Type, "\nДлина: ", f.Length, "\nШирина: ", f.Width, "\nЦвет: ", f.Color, "\nРейтинг комфорта: ", f.ComfortRating, "\n")
+	fmt.Print("Тип мебели: ", f.Type, ", Длина: ", f.Length, ", Ширина: ", f.Width, ", Цвет: ", f.Color, ", Рейтинг комфорта: ", f.ComfortRating, "\n")
 }
 
 func MakeFurniture() []Furniture {

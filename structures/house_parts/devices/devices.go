@@ -15,14 +15,14 @@ type Device struct {
 
 func (d Device) Voice() {
 	if d.VoiceControl {
-		fmt.Print("Управление голосом: Да\n")
+		fmt.Print("Voice control: Да\n")
 	} else {
-		fmt.Print("Управление голосом: Нет\n")
+		fmt.Print("Voice control: Нет\n")
 	}
 }
 
 func (d Device) Print() {
-	fmt.Print("Тип устройства: ", d.Type, "\nДлина устройства: ", d.Length, "\nШирина устройства: ", d.Width, "\nЦвет: ", d.Color, "\n")
+	fmt.Print("Тип: ", d.Type, ", Длина: ", d.Length, ", Ширина: ", d.Width, ", Цвет: ", d.Color, ", ")
 	d.Voice()
 }
 
